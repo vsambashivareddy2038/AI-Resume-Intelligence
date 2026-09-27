@@ -1,0 +1,24 @@
+{
+    "features": [
+        "candidate_experience_years",
+        "candidate_skill_count",
+        "expected_experience_years",
+        "experience_gap",
+        "experience_fit",
+        "job_skill_count",
+        "matched_skill_count",
+        "job_skill_coverage",
+        "candidate_skill_coverage",
+        "role_match_score",
+        "job_remote_hint",
+        "semantic_similarity"
+    ],
+    "test_size": 0.2,
+    "random_state": 42,
+    "models": [
+        "logistic_regression",
+        "random_forest"
+    ],
+    "target": "match_label",
+    "positive_class": "positive candidate-job match"
+}

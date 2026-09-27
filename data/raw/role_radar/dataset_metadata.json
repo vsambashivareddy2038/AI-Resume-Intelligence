@@ -1,0 +1,19 @@
+{
+    "dataset_name": "Role Radar - Job-Profile Matching Dataset",
+    "repository": "jimyones/role-radar-dataset",
+    "jobs_records": 2500,
+    "unique_jobs": 2471,
+    "profiles_records": 640,
+    "unique_profiles": 640,
+    "pairs_records": 5000,
+    "unique_pairs": 5000,
+    "labels_records": 22465,
+    "gold_labels_records": 108,
+    "pair_types": {
+        "hard_negative": 2000,
+        "positive": 1500,
+        "negative": 1500
+    },
+    "gold_labels_in_pairs": 4,
+    "gold_labels_not_in_pairs": 104
+}

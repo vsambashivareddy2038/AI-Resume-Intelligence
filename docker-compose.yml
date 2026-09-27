@@ -1,0 +1,28 @@
+services:
+  api:
+    build:
+      context: .
+      dockerfile: Dockerfile.api
+    container_name: ai-resume-api
+    environment:
+      PYTHONUNBUFFERED: "1"
+    ports:
+      - "8000:8000"
+    restart: unless-stopped
+
+  streamlit:
+    build:
+      context: .
+      dockerfile: Dockerfile.streamlit
+    container_name: ai-resume-streamlit
+    environment:
+      RESUME_API_URL: http://api:8000
+      RESUME_PRODUCTION_MODE: "true"
+      MAX_RESUME_SIZE_MB: "5"
+      MAX_JOB_DESCRIPTION_CHARS: "30000"
+      API_TIMEOUT_SECONDS: "120"
+    ports:
+      - "8501:8501"
+    depends_on:
+      - api
+    restart: unless-stopped

@@ -1,0 +1,14 @@
+streamlit
+requests
+pandas
+numpy
+scikit-learn
+spacy
+sentence-transformers
+pymupdf
+python-docx
+joblib
+fastapi
+uvicorn
+python-multipart
+pytest

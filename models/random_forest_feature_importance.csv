@@ -1,0 +1,13 @@
+feature,importance
+job_skill_coverage,0.20586152149015263
+semantic_similarity,0.18874850571443197
+candidate_skill_coverage,0.1303577237095834
+job_skill_count,0.111915948777938
+matched_skill_count,0.08977887921024015
+role_match_score,0.07751727277319682
+experience_gap,0.050156337048492615
+candidate_experience_years,0.0478187089026798
+candidate_skill_count,0.04589072915466301
+expected_experience_years,0.026855068669295733
+experience_fit,0.021699670889008246
+job_remote_hint,0.0033996336603177063
